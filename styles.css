@@ -418,4 +418,8 @@ button.submit-button:hover {
         max-width: none;
         padding: 20px;
     }
+
+    body {
+        padding: 0;
+    }
 }
