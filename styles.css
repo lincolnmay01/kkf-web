@@ -253,7 +253,7 @@ footer {
 
     .nav-links {
         position: fixed;
-        left: -100%;
+        left: -200%;
         top: 70px;
         gap: 0;
         flex-direction: column;
@@ -264,6 +264,7 @@ footer {
     }
 
     .nav-item {
+
         padding: 20px 0;
     }
 
@@ -419,7 +420,17 @@ button.submit-button:hover {
         padding: 20px;
     }
 
+    .image-container {
+        flex: none;
+        width: 90%;
+        max-width: none;
+
+    }
+
+
+
     body {
         padding: 0;
+
     }
 }
