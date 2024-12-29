@@ -144,7 +144,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    width: 80%;
+
     margin: 0 auto;
     max-width: 1400px;
     /* Limit the width for larger screens */
@@ -217,21 +217,27 @@ footer {
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .about-me-content {
+
         flex-direction: column;
+        align-items: center;
         /* Stack the image and text vertically */
         gap: 20px;
         /* Reduce gap */
-        width: 90%;
-        /* Slightly narrower for small screens */
+        margin: 0 18.75px;
+        /* Slightly narrower for small screens *flex-direction: column;
+        align-items: center;
+        gap: 20px;*/
+
     }
 
-    .about-image img {
-        width: 100%;
+    .about-image {
+        width: 90%;
         /* Image takes full width */
     }
 
     .about-text {
         max-width: 100%;
+        padding: 0 20px;
         /* Text takes full width */
     }
 
@@ -393,11 +399,13 @@ button.submit-button:hover {
         max-width: 1200px;
         /* Adjust for medium screens */
         gap: 30px;
+
     }
 
     .form-container {
         max-width: 60%;
         /* Shrink form slightly for medium screens */
+
     }
 
     .image-container {
@@ -417,7 +425,7 @@ button.submit-button:hover {
         flex: none;
         width: 100%;
         max-width: none;
-        padding: 20px;
+        padding: 0 20px;
     }
 
     .image-container {
