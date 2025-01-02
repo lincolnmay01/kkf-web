@@ -99,6 +99,7 @@ footer {
 
 .email {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .footer-content .social-icons a {
@@ -183,6 +184,11 @@ footer {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+.about-text p a {
+    text-decoration: underline;
+    color: #fff;
 }
 
 .abmecontainer {
