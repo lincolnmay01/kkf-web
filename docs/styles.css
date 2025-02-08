@@ -502,8 +502,9 @@ button.submit-button:hover {
     }
 }
 
+/*
 @media (max-width: 600px) {
     .gallery-images {
         column-count: 1;
     }
-}
+}*/
