@@ -495,9 +495,18 @@ button.submit-button:hover {
 
 .gallery-images img {
     width: 100%;
-    margin-bottom: 15px;
     display: block;
     break-inside: avoid;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+
+.gallery-images .img-wrapper {
+    break-inside: avoid;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 @media (max-width: 1100px) {
