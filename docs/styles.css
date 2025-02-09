@@ -267,7 +267,7 @@ footer {
     }
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         left: -200%;
         top: 80px;
         gap: 0;
