@@ -18,6 +18,30 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.remove('active');
       hamburger.classList.remove('active');
     }));
+
+    const dropdownButton = document.querySelector('.dropdown-button');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    let isDropdownOpen = false;
+
+    // Function to toggle dropdown
+    function toggleDropdown(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        isDropdownOpen = !isDropdownOpen;
+        dropdownContent.style.display = isDropdownOpen ? 'block' : 'none';
+    }
+
+    // Handle touch events on the dropdown button
+    dropdownButton.addEventListener('touchstart', toggleDropdown);
+
+    // Close dropdown when touching anywhere else on the page
+    document.addEventListener('touchstart', function(event) {
+        if (!event.target.closest('.gallery-dropdown')) {
+            dropdownContent.style.display = 'none';
+            isDropdownOpen = false;
+        }
+    });
 });
 
 window.onload = function() {
