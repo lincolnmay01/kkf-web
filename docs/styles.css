@@ -199,7 +199,8 @@ footer {
 /* Responsive Design for Larger Screens */
 @media (min-width: 1200px) {
     .about-me-content {
-        gap: 50px;
+        gap: 75px;
+
         /* Increase spacing between image and text */
     }
 
@@ -246,7 +247,9 @@ footer {
         padding: 0 20px;
         /* Text takes full width */
     }
+}
 
+@media (max-width: 1126px) {
     .hamburger {
         display: block;
     }
@@ -266,7 +269,7 @@ footer {
     .nav-links {
         position: fixed;
         left: -200%;
-        top: 70px;
+        top: 80px;
         gap: 0;
         flex-direction: column;
         background-color: #000000;
