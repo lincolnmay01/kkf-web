@@ -523,9 +523,9 @@ button.submit-button:hover {
     }
 }*/
 
+
 .gallery-dropdown {
-    position: relative;
-    display: inline-block;
+    display: none; /* Hide dropdown by default */
 }
 
 .dropdown-button {
@@ -564,12 +564,45 @@ button.submit-button:hover {
     background-color: #333;
 }
 
-.gallery-header h1 {
+.gallery-links a {
     font-size: 30px;
     margin: 20px 0px 10px 0px;
     padding-left: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.gallery-links a:hover {
+    text-decoration: underline;
 }
 
 .gallery-header {
+    margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.gallery-header h1 {
+    display: none;
+}
+
+.gallery-links a.current {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .gallery-links {
+        display: none; /* Hide horizontal links on mobile */
+    }
+    
+    .gallery-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .gallery-header h1 {
+        display: block;
+        font-size: 30px;
+        margin: 0px 0px 10px 0px;
+        padding-left: 40px;
+    }
 }

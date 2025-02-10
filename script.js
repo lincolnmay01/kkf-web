@@ -42,6 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
             isDropdownOpen = false;
         }
     });
+
+    const currentLocation = location.pathname.split('/').pop();
+    const galleryLinks = document.querySelectorAll('.gallery-links a');
+    
+    galleryLinks.forEach(link => {
+        if(link.getAttribute('href') === currentLocation) {
+            link.classList.add('current');
+        }
+    });
 });
 
 window.onload = function() {
