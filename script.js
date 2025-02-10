@@ -84,5 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
       contactForm.reset();
+      setTimeout(() => contactForm.reset(), 100);  // Ensures a reset after page load
     }
   };
