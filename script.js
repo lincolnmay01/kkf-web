@@ -75,15 +75,20 @@ document.addEventListener("DOMContentLoaded", () => {
     swedenTitle.classList.add('current');
   }
 
+  const contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+      contactForm.reset();
+      setTimeout(() => contactForm.reset(), 100);  // Ensures a reset after page load
+    }
 
 });
 
   /*links to social media*/
   window.onload = function() {
-    // Reset the form fields when the page loads
+    console.log("Page loaded, resetting form...");
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
       contactForm.reset();
-      setTimeout(() => contactForm.reset(), 100);  // Ensures a reset after page load
     }
   };
+  
