@@ -1,11 +1,13 @@
 /*links to social media*/
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
+
   // Reset the form fields when the page loads
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.reset();
+    
   }
-};
+});
 /*links to social media*/
 document.addEventListener("DOMContentLoaded", () => {
   // Reset the form fields when the page loads
