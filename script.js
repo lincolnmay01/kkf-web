@@ -1,4 +1,10 @@
 /*links to social media*/
+
+window.onload = function() {
+  // Reset the form fields when the page loads
+  document.getElementById("contact-form").reset();
+};
+
 document.getElementById('emailButton').addEventListener('click', function() {
     window.location.href = 'mailto:kristinakf04@gmail.com';
   });
@@ -57,7 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-window.onload = function() {
-  // Reset the form fields when the page loads
-  document.getElementById("contact-form").reset();
-};
+
