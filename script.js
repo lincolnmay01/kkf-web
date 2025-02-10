@@ -51,6 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add('current');
         }
     });
+
+    if(currentLocation === 'index.html' || currentLocation === '') {
+      swedenTitle.classList.add('current');
+  }
 });
 
 window.onload = function() {
