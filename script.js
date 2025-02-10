@@ -75,10 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
     swedenTitle.classList.add('current');
   }
 
-  console.log("Page loaded, resetting form...");
-    const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
-      contactForm.reset();
-    }
 });
+
+window.addEventListener("pageshow", () => {
+  console.log("Page loaded (including back navigation), resetting form...");
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.reset();
+  }
+});
+
 
